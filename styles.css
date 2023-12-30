@@ -1,0 +1,52 @@
+
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(243, 237, 237, 0.826);
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    width: 600px;
+    padding: 1rem;
+}
+
+.accord__title {
+    text-align: center;
+    padding: 0.3rem;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.accord__item {
+    margin-bottom: 1px;
+}
+
+.accord__header {
+    padding: 0.3rem 1rem;
+    border: solid 1px rgb(184, 182, 182);
+    background-color: rgb(245, 241, 241);
+}
+
+.accord__content {
+    display: none;
+    padding: 0.3rem 1rem;
+    border: solid 1px rgb(184, 182, 182);
+    background-color: white;
+
+}
+
+.accord__item.active .accord__content {
+    display: block;
+}
